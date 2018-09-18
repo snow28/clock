@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="utf-8">
+    <title>Clock</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700" rel="stylesheet">
+    <link href="./css/main.css" rel="stylesheet">
+
+    <!--[if !mso]><!-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!--<![endif]-->
+
+</head>
+
+<!--
+    {current_time format="%P %H:%i:%s"} = "+02:00 16:52:14"
+
+    <script>
+        localStorage.setItem('current-time', {current_time format="%P %H:%i:%s"});
+    </script>
+     <div class="js-current-time hide">
+        <span>{current_time format="%P %H:%i:%s"}</span>
+    </div>
+ -->
+
+<body>
+    <div class="js-current-time hide">
+        <span>+02:00 12:59:55</span>
+    </div>
+
+
+    <main class="content-wrapper">
+
+        <div class="js-clock" data-type="server-time" data-timezone-offset="0" data-time-format="12" data-current-time="12:59">
+            <span class="hour js-hour"></span>
+            <span class="separator">:</span>
+            <span class="minutes js-minutes"></span>
+            <span class="separator">:</span>
+            <span class="seconds js-seconds"></span>
+        </div>
+
+    </main>
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="js/script.js"></script>
+<script id="__bs_script__">//<![CDATA[
+document.write("<script async src='http://HOST:3000/browser-sync/browser-sync-client.js?v=2.23.6'><\/script>".replace("HOST", location.hostname));
+//]]></script>
+
+</body>
+
+</html>
